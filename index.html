@@ -33,6 +33,7 @@
           <a href="#about">About</a>
           <a href="#work">Work With Dr. Fab</a>
           <a href="#sanctuary">Sanctuary</a>
+          <a href="#companion">Companion</a>
           <a href="#resources">Resources</a>
           <a href="#contact">Contact</a>
         </nav>
@@ -57,6 +58,7 @@
           <div class="hero-paths" aria-label="Doctor Fab support pathways">
             <span>Private support</span>
             <span>Digital Sanctuary</span>
+            <span>Reflection companion</span>
             <span>Workshops & speaking</span>
           </div>
         </div>
@@ -112,8 +114,9 @@
             <span class="offer-number">02</span>
             <h3>Healing Sanctuary</h3>
             <p>
-              A growing digital home for grounding tools, guided reflection,
-              nervous system language, and gentle practices between sessions.
+              A growing digital home for grounding tools, a guided reflection
+              companion, plain-language teaching, and gentle practices between
+              sessions.
             </p>
             <ul>
               <li>Short practices you can return to</li>
@@ -208,6 +211,81 @@
         </div>
       </section>
 
+      <section id="companion" class="companion section-shell" aria-labelledby="companion-title">
+        <div class="companion-copy">
+          <p class="eyebrow">Reflection & Grounding Companion</p>
+          <h2 id="companion-title">A calm checkpoint for the moments between sessions.</h2>
+          <p>
+            This gentle companion is built for short, present-tense support:
+            naming what is happening, finding steadier ground, and choosing one
+            small next step without rushing the visitor into a story they do not
+            want to tell.
+          </p>
+          <p>
+            It is not therapy, diagnosis, emergency care, or a replacement for
+            working with Dr. Fab or another clinician. It is a quiet tool for
+            reflection when a little structure would help.
+          </p>
+          <div class="companion-safety">
+            <strong>Need urgent help?</strong>
+            <span>
+              If you are in immediate danger or crisis in the United States,
+              call 911 or call/text 988. The companion will pause and show
+              crisis resources instead of continuing an exercise.
+            </span>
+          </div>
+        </div>
+
+        <div class="companion-tool" data-companion-tool>
+          <div class="companion-tool-header">
+            <div>
+              <span class="companion-tool-kicker">Doctor Fab Sanctuary</span>
+              <h3>Take one steady minute.</h3>
+            </div>
+            <span class="companion-session-note">Not stored here</span>
+          </div>
+
+          <div
+            class="companion-messages"
+            data-companion-messages
+            aria-label="Companion conversation"
+            aria-live="polite"
+          ></div>
+
+          <div class="companion-prompts" aria-label="Starter reflections">
+            <button type="button" data-companion-prompt="I want a grounding exercise for the next two minutes.">Grounding</button>
+            <button type="button" data-companion-prompt="I feel activated and want help slowing down.">Slow Down</button>
+            <button type="button" data-companion-prompt="Help me choose one gentle next step.">Next Step</button>
+          </div>
+
+          <form class="companion-form" data-companion-form>
+            <label class="sr-only" for="companion-reflection">Share a reflection with the companion</label>
+            <textarea
+              id="companion-reflection"
+              data-companion-input
+              maxlength="900"
+              rows="5"
+              aria-describedby="companion-helper companion-status"
+              placeholder="Share a few words about what feels present right now."
+            ></textarea>
+            <p id="companion-helper" class="companion-helper">
+              Share only what feels safe. You can pause, skip, or stop.
+            </p>
+            <div class="companion-form-footer">
+              <span class="companion-counter" data-companion-counter>0/900</span>
+              <button class="button primary companion-send" type="submit">Send</button>
+            </div>
+            <p
+              id="companion-status"
+              class="companion-status"
+              data-companion-status
+              role="status"
+              aria-live="polite"
+            ></p>
+          </form>
+        </div>
+      </section>
+
       <section id="resources" class="resources">
         <img
           src="assets/generated/doctorfab-coastal-path.jpg"
@@ -262,6 +340,7 @@
         </div>
         <div class="contact-panel">
           <a class="button primary full" href="mailto:hello@doctorfab.org?subject=Doctor%20Fab%20consultation%20inquiry">Request a Consultation</a>
+          <a class="button secondary full" href="#companion">Try the Companion</a>
           <a class="button secondary full" href="mailto:hello@doctorfab.org?subject=Doctor%20Fab%20Healing%20Sanctuary%20list">Join the Sanctuary List</a>
           <a class="button secondary full" href="mailto:hello@doctorfab.org?subject=Doctor%20Fab%20workshop%20or%20speaking%20inquiry">Ask About Workshops</a>
         </div>
@@ -278,5 +357,6 @@
         or 988. This website is not a crisis response service.
       </p>
     </footer>
+    <script src="companion.js" defer></script>
   </body>
 </html>

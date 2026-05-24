@@ -1,6 +1,18 @@
 RewriteEngine On
 DirectoryIndex index.html
 
+# Never serve local secrets or runtime rate-limit files.
+RewriteRule ^storage(/|$) - [F,L]
+
+<FilesMatch "^(config|config\.local|doctorfab-companion-config|.*\.secret)\.php$">
+  <IfModule mod_authz_core.c>
+    Require all denied
+  </IfModule>
+  <IfModule !mod_authz_core.c>
+    Deny from all
+  </IfModule>
+</FilesMatch>
+
 # Keep one public URL so browsers and search engines do not split traffic.
 RewriteCond %{HTTPS} !=on [OR]
 RewriteCond %{HTTP_HOST} ^www\.doctorfab\.org$ [NC]

@@ -1,3 +1,9 @@
 preview-*.png
 *.zip
 .DS_Store
+config.php
+config.local.php
+doctorfab-companion-config.php
+storage/*.json
+storage/*.log
+!storage/.htaccess
