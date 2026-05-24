@@ -1,0 +1,2 @@
+RewriteEngine On
+RewriteRule ^(.*)$ https://doctorfab.org/$1 [R=301,L]
