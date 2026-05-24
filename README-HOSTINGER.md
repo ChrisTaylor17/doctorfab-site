@@ -65,7 +65,7 @@ If Hostinger does not allow a file above `public_html`:
 The model string currently used is:
 
 ```php
-claude-3-5-haiku-20241022
+claude-haiku-4-5-20251001
 ```
 
 Change it in the private config file under `anthropic_model`.

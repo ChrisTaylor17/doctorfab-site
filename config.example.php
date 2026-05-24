@@ -11,7 +11,7 @@
  */
 return [
     'anthropic_api_key' => 'PASTE_YOUR_ANTHROPIC_API_KEY_HERE',
-    'anthropic_model' => 'claude-3-5-haiku-20241022',
+    'anthropic_model' => 'claude-haiku-4-5-20251001',
     'anthropic_version' => '2023-06-01',
     'rate_limit_salt' => 'CHANGE_THIS_TO_A_LONG_RANDOM_STRING',
     'request_timeout_seconds' => 25,

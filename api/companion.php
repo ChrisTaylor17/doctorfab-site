@@ -248,7 +248,7 @@ if (!$systemPrompt) {
 }
 
 $payload = [
-    'model' => (string)($config['anthropic_model'] ?? 'claude-3-5-haiku-20241022'),
+    'model' => (string)($config['anthropic_model'] ?? 'claude-haiku-4-5-20251001'),
     'max_tokens' => (int)($config['max_tokens'] ?? 420),
     'temperature' => (float)($config['temperature'] ?? 0.6),
     'system' => $systemPrompt,
