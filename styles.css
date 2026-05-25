@@ -1276,6 +1276,7 @@ h3 {
 }
 
 .feeling-visual img {
+  height: auto;
   width: 100%;
 }
 
@@ -1289,6 +1290,7 @@ h3 {
 }
 
 .feeling-category-grid {
+  align-items: start;
   display: grid;
   gap: 12px;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1354,10 +1356,13 @@ h3 {
 }
 
 .feeling-tags {
-  border-top: 1px solid var(--line);
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
+}
+
+.feeling-category > .feeling-tags {
+  border-top: 1px solid var(--line);
   padding: 16px 20px 20px;
 }
 
@@ -1369,6 +1374,28 @@ h3 {
   font-size: 13px;
   font-weight: 800;
   padding: 7px 10px;
+}
+
+.feeling-subgroups {
+  border-top: 1px solid var(--line);
+  display: grid;
+  gap: 16px;
+  padding: 18px 20px 20px;
+}
+
+.feeling-subgroup + .feeling-subgroup {
+  border-top: 1px solid rgba(21, 57, 71, 0.1);
+  padding-top: 16px;
+}
+
+.feeling-subgroup h4 {
+  color: var(--navy-2);
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  line-height: 1.35;
+  margin: 0 0 10px;
+  text-transform: uppercase;
 }
 
 .pathway {

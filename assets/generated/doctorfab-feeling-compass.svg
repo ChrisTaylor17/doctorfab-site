@@ -1,0 +1,84 @@
+<svg width="1200" height="760" viewBox="0 0 1200 760" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Therapeutic Feeling Compass</title>
+  <desc id="desc">A calm coastal compass for the Doctor Fab therapeutic lexicon, connecting core emotions, nervous system states, attachment, needs, children and teens, and mind body spirit language.</desc>
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fffdf9"/>
+      <stop offset="0.52" stop-color="#fbf7f1"/>
+      <stop offset="1" stop-color="#e9f4f2"/>
+    </linearGradient>
+    <radialGradient id="centerGlow" cx="50%" cy="48%" r="55%">
+      <stop offset="0" stop-color="#f8dfe7" stop-opacity="0.85"/>
+      <stop offset="0.58" stop-color="#f8dfe7" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#f8dfe7" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#153947" flood-opacity="0.12"/>
+    </filter>
+    <style>
+      .title { fill: #153947; font-family: Georgia, "Times New Roman", serif; font-size: 54px; font-weight: 500; }
+      .subtitle { fill: #657177; font-family: Inter, Arial, sans-serif; font-size: 20px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; }
+      .label { fill: #153947; font-family: Georgia, "Times New Roman", serif; font-size: 28px; font-weight: 500; }
+      .micro { fill: #657177; font-family: Inter, Arial, sans-serif; font-size: 14px; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; }
+      .center { fill: #153947; font-family: Georgia, "Times New Roman", serif; font-size: 38px; font-weight: 500; }
+      .centerSmall { fill: #657177; font-family: Inter, Arial, sans-serif; font-size: 17px; font-weight: 750; }
+      .connector { stroke: #8fb9b7; stroke-width: 2; stroke-linecap: round; opacity: 0.62; }
+    </style>
+  </defs>
+  <rect width="1200" height="760" rx="34" fill="url(#paper)"/>
+  <path d="M-38 607 C168 536 278 643 480 583 C708 515 804 614 1016 548 C1118 516 1185 511 1240 534" fill="none" stroke="#8fb9b7" stroke-width="5" opacity="0.22"/>
+  <path d="M-42 642 C154 578 293 682 499 616 C707 549 826 654 1035 590 C1134 560 1192 557 1240 575" fill="none" stroke="#cc829a" stroke-width="3" opacity="0.18"/>
+  <circle cx="600" cy="412" r="250" fill="url(#centerGlow)"/>
+  <circle cx="600" cy="412" r="222" fill="none" stroke="#8fb9b7" stroke-width="2" opacity="0.34"/>
+  <circle cx="600" cy="412" r="148" fill="none" stroke="#cc829a" stroke-width="2" opacity="0.26"/>
+  <line class="connector" x1="600" y1="412" x2="600" y2="166"/>
+  <line class="connector" x1="600" y1="412" x2="824" y2="285"/>
+  <line class="connector" x1="600" y1="412" x2="824" y2="542"/>
+  <line class="connector" x1="600" y1="412" x2="600" y2="654"/>
+  <line class="connector" x1="600" y1="412" x2="376" y2="542"/>
+  <line class="connector" x1="600" y1="412" x2="376" y2="285"/>
+  <text class="subtitle" x="600" y="82" text-anchor="middle">Doctor Fab Lexicon</text>
+  <text class="title" x="600" y="141" text-anchor="middle">Therapeutic Feeling Compass</text>
+  <g filter="url(#softShadow)">
+    <rect x="468" y="333" width="264" height="158" rx="79" fill="#fffdf9" stroke="#e7d7c4" stroke-width="2"/>
+    <text class="center" x="600" y="386" text-anchor="middle">Name.</text>
+    <text class="center" x="600" y="428" text-anchor="middle">Notice.</text>
+    <text class="center" x="600" y="470" text-anchor="middle">Need.</text>
+  </g>
+  <g filter="url(#softShadow)">
+    <rect x="438" y="176" width="324" height="92" rx="8" fill="#fffdf9" stroke="#d9e2e3" stroke-width="2"/>
+    <text class="micro" x="600" y="212" text-anchor="middle">Core emotions</text>
+    <text class="label" x="600" y="248" text-anchor="middle">Joy, sadness, anger, fear</text>
+  </g>
+  <g filter="url(#softShadow)">
+    <rect x="785" y="285" width="315" height="104" rx="8" fill="#fffdf9" stroke="#d9e2e3" stroke-width="2"/>
+    <text class="micro" x="942" y="322" text-anchor="middle">Nervous system</text>
+    <text class="label" x="942" y="357" text-anchor="middle">Fight, flight, freeze, fawn</text>
+  </g>
+  <g filter="url(#softShadow)">
+    <rect x="782" y="518" width="318" height="104" rx="8" fill="#fffdf9" stroke="#d9e2e3" stroke-width="2"/>
+    <text class="micro" x="941" y="555" text-anchor="middle">Attachment</text>
+    <text class="label" x="941" y="590" text-anchor="middle">Secure, anxious, avoidant</text>
+  </g>
+  <g filter="url(#softShadow)">
+    <rect x="433" y="640" width="334" height="80" rx="8" fill="#fffdf9" stroke="#d9e2e3" stroke-width="2"/>
+    <text class="micro" x="600" y="671" text-anchor="middle">Needs underneath</text>
+    <text class="label" x="600" y="705" text-anchor="middle">Safety, rest, connection</text>
+  </g>
+  <g filter="url(#softShadow)">
+    <rect x="100" y="518" width="318" height="104" rx="8" fill="#fffdf9" stroke="#d9e2e3" stroke-width="2"/>
+    <text class="micro" x="259" y="555" text-anchor="middle">Children &amp; teens</text>
+    <text class="label" x="259" y="590" text-anchor="middle">Concrete feeling words</text>
+  </g>
+  <g filter="url(#softShadow)">
+    <rect x="100" y="285" width="318" height="104" rx="8" fill="#fffdf9" stroke="#d9e2e3" stroke-width="2"/>
+    <text class="micro" x="259" y="322" text-anchor="middle">Mind, body, spirit</text>
+    <text class="label" x="259" y="357" text-anchor="middle">Somatic and meaning states</text>
+  </g>
+  <circle cx="600" cy="166" r="7" fill="#cc829a"/>
+  <circle cx="824" cy="285" r="7" fill="#8fb9b7"/>
+  <circle cx="824" cy="542" r="7" fill="#cc829a"/>
+  <circle cx="600" cy="654" r="7" fill="#8fb9b7"/>
+  <circle cx="376" cy="542" r="7" fill="#cc829a"/>
+  <circle cx="376" cy="285" r="7" fill="#8fb9b7"/>
+</svg>
