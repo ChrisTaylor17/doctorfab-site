@@ -2280,6 +2280,20 @@ h3 {
   .coaching-values-grid article {
     min-height: auto;
   }
+
+  .feeling-category-grid {
+    gap: 18px;
+    grid-template-columns: 1fr;
+  }
+
+  .feeling-category summary {
+    padding: 21px 24px;
+  }
+
+  .feeling-category > .feeling-tags,
+  .feeling-subgroups {
+    padding: 22px 24px 24px;
+  }
 }
 
 @media (max-width: 720px) {
@@ -2328,6 +2342,10 @@ h3 {
 
   .coaching-hero {
     padding: 48px 20px 64px;
+  }
+
+  .section-shell {
+    padding: 68px 24px;
   }
 
   .hero::before {
@@ -2422,6 +2440,185 @@ h3 {
   .coaching-closing-actions,
   .lexicon-detail {
     padding: 20px;
+  }
+
+  .section-intro {
+    gap: 18px;
+    margin-bottom: 34px;
+  }
+
+  .section-intro p:not(.eyebrow),
+  .feeling-intro p:not(.eyebrow),
+  .lexicon-detail p,
+  .opening-copy,
+  .about-copy p,
+  .sanctuary-copy p,
+  .companion-copy p,
+  .resources-copy p,
+  .contact-copy p,
+  .coaching-why-copy p,
+  .coaching-ideal-copy p,
+  .coaching-closing p {
+    font-size: 17px;
+    line-height: 1.72;
+  }
+
+  .lexicon-tools {
+    align-items: stretch;
+    gap: 16px;
+    margin-bottom: 26px;
+  }
+
+  .lexicon-tools input {
+    min-height: 54px;
+    padding: 13px 18px;
+  }
+
+  .lexicon-filters {
+    gap: 10px;
+  }
+
+  .lexicon-filters button {
+    min-height: 45px;
+    padding: 10px 16px;
+  }
+
+  .lexicon-grid {
+    gap: 18px;
+  }
+
+  .lexicon-grid article {
+    min-height: auto;
+    padding: 28px 26px;
+  }
+
+  .lexicon-grid h3,
+  .focus-list h3,
+  .coaching-service-card h3,
+  .coaching-values-grid h3 {
+    line-height: 1.18;
+  }
+
+  .feeling-words {
+    gap: 30px;
+    margin-top: 54px;
+    padding-top: 42px;
+  }
+
+  .feeling-visual {
+    box-shadow: 0 16px 38px rgba(21, 57, 71, 0.07);
+  }
+
+  .feeling-intro {
+    display: grid;
+    gap: 12px;
+  }
+
+  .feeling-intro h3 {
+    font-size: clamp(31px, 8.4vw, 38px);
+    line-height: 1.13;
+    margin-bottom: 0;
+  }
+
+  .feeling-category-grid {
+    gap: 20px;
+  }
+
+  .feeling-category {
+    box-shadow: 0 14px 34px rgba(21, 57, 71, 0.055);
+  }
+
+  .feeling-category summary {
+    gap: 9px;
+    padding: 24px 24px 22px;
+  }
+
+  .feeling-category summary::after {
+    right: 24px;
+    top: 27px;
+  }
+
+  .feeling-category summary span {
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    line-height: 1.45;
+  }
+
+  .feeling-category summary strong {
+    font-size: clamp(25px, 7.2vw, 31px);
+    line-height: 1.16;
+  }
+
+  .feeling-category > .feeling-tags {
+    gap: 10px;
+    padding: 24px;
+  }
+
+  .feeling-tags {
+    gap: 10px;
+  }
+
+  .feeling-tags span {
+    background: rgba(255, 255, 255, 0.92);
+    border-color: rgba(21, 57, 71, 0.11);
+    font-size: 14px;
+    line-height: 1.28;
+    padding: 9px 12px;
+  }
+
+  .feeling-subgroups {
+    gap: 21px;
+    padding: 24px;
+  }
+
+  .feeling-subgroup + .feeling-subgroup {
+    padding-top: 21px;
+  }
+
+  .feeling-subgroup h4 {
+    line-height: 1.45;
+    margin-bottom: 14px;
+  }
+
+  .coaching-service-grid,
+  .coaching-values-grid,
+  .coaching-testimonial-grid {
+    gap: 18px;
+  }
+
+  .coaching-service-card,
+  .coaching-values-grid article,
+  .coaching-testimonial-grid article {
+    padding: 28px 26px;
+  }
+
+  .coaching-service-card p,
+  .coaching-values-grid p,
+  .coaching-faq p,
+  .coaching-testimonial-grid p {
+    font-size: 16px;
+    line-height: 1.68;
+  }
+
+  .coaching-service-card dl {
+    gap: 8px;
+  }
+
+  .coaching-service-card dt {
+    margin-top: 16px;
+  }
+
+  .coaching-faq-list {
+    gap: 14px;
+  }
+
+  .coaching-faq summary {
+    line-height: 1.2;
+    padding: 22px 58px 22px 24px;
+  }
+
+  .coaching-faq details p {
+    padding: 20px 24px 24px;
   }
 
   .contact-modal {
