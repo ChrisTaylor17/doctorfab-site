@@ -754,6 +754,7 @@ ${contactMessageEl.value}`;
   setPathwayStatus("");
   if (lexiconCards.length) {
     selectLexiconCard(lexiconCards[0]);
+    filterLexicon();
   }
 
   renderInitialMessages();
