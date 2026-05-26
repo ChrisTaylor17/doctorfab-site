@@ -37,7 +37,7 @@
   <line class="connector" x1="600" y1="412" x2="600" y2="654"/>
   <line class="connector" x1="600" y1="412" x2="376" y2="542"/>
   <line class="connector" x1="600" y1="412" x2="376" y2="285"/>
-  <text class="subtitle" x="600" y="82" text-anchor="middle">Doctor Fab Lexicon</text>
+  <text class="subtitle" x="600" y="82" text-anchor="middle">Doctor Fab&#8217;s Emotional Atlas</text>
   <text class="title" x="600" y="141" text-anchor="middle">Therapeutic Feeling Compass</text>
   <g filter="url(#softShadow)">
     <rect x="468" y="333" width="264" height="158" rx="79" fill="#fffdf9" stroke="#e7d7c4" stroke-width="2"/>
