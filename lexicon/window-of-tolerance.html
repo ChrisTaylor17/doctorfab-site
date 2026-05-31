@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Window of Tolerance: How to Recognize It and Widen It | Doctor Fab</title>
+<meta name="description" content="A trauma-informed explanation of the Window of Tolerance — what it is, how to recognize when you have left it, and steady ways to widen it over time. By Dr. Fabiola Jean Taylor.">
+<meta property="og:title" content="The Window of Tolerance: How to Recognize It and Widen It">
+<meta property="og:description" content="When the nervous system has enough capacity to feel, think, choose, and connect. Plain-language teaching from Doctor Fab.">
+<meta property="og:type" content="article">
+<meta name="theme-color" content="#153947">
+<link rel="canonical" href="https://doctorfab.org/lexicon/window-of-tolerance.html">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=DM+Sans:wght@300;400;500;600&display=swap');
+
+  :root {
+    --teal: #153947;
+    --teal-soft: #2C5566;
+    --cream: #F5EFE6;
+    --cream-deep: #EBE2D3;
+    --sand: #D9CCB4;
+    --coral: #C97B5F;
+    --ink: #1F2E33;
+    --muted: #6B7B82;
+    --line: #D9CCB4;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'DM Sans', sans-serif;
+    color: var(--ink);
+    background: var(--cream);
+    font-size: 17px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--teal); text-decoration: none; border-bottom: 1px solid var(--sand); transition: border-color 0.2s; }
+  a:hover { border-bottom-color: var(--coral); }
+
+  /* HEADER */
+  .site-nav {
+    border-bottom: 1px solid var(--line);
+    padding: 22px 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--cream);
+  }
+  .brand {
+    font-family: 'Fraunces', serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--teal);
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .brand::before {
+    content: '';
+    width: 10px; height: 10px;
+    background: var(--coral);
+    border-radius: 50%;
+    display: inline-block;
+  }
+  .brand em { font-style: italic; }
+  .nav-links { display: flex; gap: 28px; font-size: 14px; }
+  .nav-links a { border: none; color: var(--teal-soft); }
+  .nav-links a:hover { color: var(--coral); }
+  @media (max-width: 720px) {
+    .site-nav { align-items: flex-start; flex-direction: column; gap: 16px; }
+    .nav-links { flex-wrap: wrap; gap: 14px 20px; }
+  }
+
+  /* HERO */
+  .hero {
+    padding: 80px 32px 60px;
+    max-width: 880px;
+    margin: 0 auto;
+  }
+  .hero-eyebrow {
+    font-size: 11px;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: var(--coral);
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-weight: 500;
+  }
+  .hero-eyebrow::before {
+    content: '';
+    width: 28px; height: 1px;
+    background: var(--coral);
+    display: inline-block;
+  }
+  .hero h1 {
+    font-family: 'Fraunces', serif;
+    font-weight: 300;
+    font-size: clamp(36px, 6vw, 64px);
+    line-height: 1.05;
+    letter-spacing: -0.025em;
+    color: var(--teal);
+    margin-bottom: 28px;
+  }
+  .hero h1 em { font-style: italic; color: var(--coral); }
+  .hero-deck {
+    font-family: 'Fraunces', serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: clamp(19px, 2.2vw, 24px);
+    line-height: 1.5;
+    color: var(--teal-soft);
+    max-width: 720px;
+  }
+  .hero-meta {
+    margin-top: 40px;
+    padding-top: 24px;
+    border-top: 1px solid var(--line);
+    display: flex;
+    gap: 32px;
+    font-size: 13px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  /* BODY */
+  .article {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 20px 32px 80px;
+  }
+  .article p {
+    margin-bottom: 22px;
+    font-size: 18px;
+    line-height: 1.72;
+  }
+  .article p.lede::first-letter {
+    font-family: 'Fraunces', serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 64px;
+    line-height: 0.85;
+    float: left;
+    color: var(--coral);
+    padding: 10px 14px 0 0;
+  }
+  .article h2 {
+    font-family: 'Fraunces', serif;
+    font-weight: 300;
+    font-size: clamp(28px, 4vw, 38px);
+    line-height: 1.15;
+    letter-spacing: -0.015em;
+    color: var(--teal);
+    margin-top: 64px;
+    margin-bottom: 24px;
+  }
+  .article h2 em { font-style: italic; color: var(--coral); }
+  .article h3 {
+    font-family: 'Fraunces', serif;
+    font-weight: 400;
+    font-size: 22px;
+    color: var(--teal);
+    margin-top: 36px;
+    margin-bottom: 14px;
+  }
+  .article strong { color: var(--teal); font-weight: 500; }
+  .article em { color: var(--teal-soft); }
+
+  /* PULL QUOTE */
+  .pull {
+    margin: 56px -32px;
+    padding: 48px 56px;
+    background: var(--teal);
+    color: var(--cream);
+    position: relative;
+  }
+  .pull-text {
+    font-family: 'Fraunces', serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: clamp(22px, 3vw, 30px);
+    line-height: 1.35;
+    color: var(--cream);
+  }
+  .pull-text em { color: var(--sand); font-style: normal; }
+  .pull-attr {
+    margin-top: 20px;
+    font-size: 12px;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--sand);
+  }
+
+  /* DIAGRAM */
+  .diagram {
+    margin: 48px 0;
+    padding: 40px 32px;
+    background: var(--cream-deep);
+    border-radius: 4px;
+  }
+  .diagram-label {
+    font-size: 11px;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: var(--coral);
+    margin-bottom: 24px;
+    font-weight: 500;
+  }
+  .zone {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 14px 0;
+    border-bottom: 1px solid var(--sand);
+  }
+  .zone:last-child { border-bottom: none; }
+  .zone-bar {
+    width: 6px;
+    height: 36px;
+    flex-shrink: 0;
+    border-radius: 3px;
+  }
+  .zone-bar.up { background: linear-gradient(180deg, #C97B5F, #B85530); }
+  .zone-bar.mid { background: linear-gradient(180deg, #5C9B7E, #2C5566); }
+  .zone-bar.down { background: linear-gradient(180deg, #4A6B7A, #2C3E47); }
+  .zone-name {
+    font-family: 'Fraunces', serif;
+    font-size: 18px;
+    color: var(--teal);
+    font-weight: 500;
+    min-width: 160px;
+  }
+  .zone-name em { font-style: italic; color: var(--coral); }
+  .zone-desc {
+    font-size: 15px;
+    color: var(--ink);
+    line-height: 1.5;
+  }
+
+  /* TRY THIS */
+  .try-this {
+    margin: 48px 0;
+    padding: 36px 36px;
+    border: 1px solid var(--line);
+    border-left: 3px solid var(--coral);
+    background: rgba(255,255,255,0.4);
+  }
+  .try-this-label {
+    font-size: 11px;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: var(--coral);
+    margin-bottom: 14px;
+    font-weight: 500;
+  }
+  .try-this h3 {
+    font-family: 'Fraunces', serif;
+    font-weight: 300;
+    font-size: 26px;
+    color: var(--teal);
+    margin-bottom: 14px;
+    margin-top: 0;
+  }
+  .try-this h3 em { font-style: italic; color: var(--coral); }
+  .try-this ol {
+    margin-left: 22px;
+    margin-top: 12px;
+  }
+  .try-this li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+  }
+
+  /* RELATED */
+  .related {
+    margin: 64px 0 0;
+    padding: 48px 0 0;
+    border-top: 1px solid var(--line);
+  }
+  .related-label {
+    font-size: 11px;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: var(--coral);
+    margin-bottom: 24px;
+    font-weight: 500;
+  }
+  .related h3 {
+    font-family: 'Fraunces', serif;
+    font-weight: 300;
+    font-size: 30px;
+    color: var(--teal);
+    margin-bottom: 28px;
+    margin-top: 0;
+  }
+  .related-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 18px;
+  }
+  .related-item {
+    padding: 22px 22px;
+    background: var(--cream-deep);
+    border: none;
+    display: block;
+  }
+  .related-item .term {
+    font-family: 'Fraunces', serif;
+    font-size: 19px;
+    color: var(--teal);
+    display: block;
+    margin-bottom: 6px;
+  }
+  .related-item .gloss {
+    font-size: 14px;
+    color: var(--muted);
+    line-height: 1.5;
+  }
+  .related-item:hover {
+    background: var(--sand);
+  }
+
+  /* CTA */
+  .cta-block {
+    margin: 64px -32px 0;
+    padding: 64px 56px;
+    background: var(--teal);
+    color: var(--cream);
+    text-align: left;
+  }
+  .cta-block h3 {
+    font-family: 'Fraunces', serif;
+    font-weight: 300;
+    font-size: clamp(28px, 4vw, 40px);
+    line-height: 1.1;
+    color: var(--cream);
+    margin-bottom: 20px;
+    margin-top: 0;
+  }
+  .cta-block h3 em { font-style: italic; color: var(--sand); }
+  .cta-block p {
+    font-family: 'Fraunces', serif;
+    font-weight: 300;
+    font-size: 19px;
+    line-height: 1.55;
+    color: var(--cream-deep);
+    margin-bottom: 32px;
+    max-width: 580px;
+  }
+  .cta-buttons { display: flex; gap: 16px; flex-wrap: wrap; }
+  .btn {
+    padding: 16px 28px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+  }
+  .btn-primary {
+    background: var(--cream);
+    color: var(--teal);
+  }
+  .btn-primary:hover { background: var(--sand); }
+  .btn-ghost {
+    background: transparent;
+    color: var(--cream);
+    border: 1px solid var(--sand);
+  }
+  .btn-ghost:hover { background: rgba(217, 204, 180, 0.1); }
+
+  /* DISCLAIMER */
+  .disclaimer {
+    margin-top: 48px;
+    padding: 22px 24px;
+    background: var(--cream-deep);
+    font-size: 13px;
+    line-height: 1.6;
+    color: var(--muted);
+    border-left: 3px solid var(--sand);
+  }
+  .disclaimer strong { color: var(--teal); }
+
+  /* FOOTER */
+  .site-footer {
+    background: var(--teal);
+    color: var(--sand);
+    padding: 48px 32px 32px;
+    text-align: center;
+    font-size: 13px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+  }
+  .site-footer .tag {
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-size: 16px;
+    color: var(--cream);
+    text-transform: none;
+    letter-spacing: 0;
+    margin-bottom: 16px;
+  }
+
+  @media (max-width: 720px) {
+    .pull, .cta-block { margin-left: -32px; margin-right: -32px; padding-left: 32px; padding-right: 32px; }
+    .article p { font-size: 17px; }
+  }
+</style>
+</head>
+<body>
+
+<nav class="site-nav">
+  <a class="brand" href="/">Doctor <em>Fab</em></a>
+  <div class="nav-links">
+    <a href="/#about">About</a>
+    <a href="/#work">Work With Dr. Fab</a>
+    <a href="/autism-parent-coaching.html">Parent Coaching</a>
+    <a href="/#sanctuary">Sanctuary</a>
+    <a href="/#lexicon">Lexicon</a>
+    <a href="/#resources">Resources</a>
+    <a href="/#companion">Companion</a>
+    <a href="/#contact">Contact</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-eyebrow">The Inner Lexicon · Body</div>
+  <h1>The Window of <em>Tolerance</em>.</h1>
+  <p class="hero-deck">The zone where the nervous system has enough capacity to feel, think, choose, and connect — and what it looks like when you have left it.</p>
+  <div class="hero-meta">
+    <span>By Dr. Fabiola Jean Taylor</span>
+    <span>Reading time · 7 min</span>
+  </div>
+</section>
+
+<article class="article">
+
+  <p class="lede">There is a zone inside you where life feels manageable. Not easy. Not painless. But manageable. You can feel what is happening without being swept away by it. You can think clearly enough to choose what comes next. You can stay connected to the people in front of you instead of disappearing into your own head. This zone has a name. Clinicians call it the <strong>Window of Tolerance</strong>, a term first introduced by Dr. Dan Siegel.</p>
+
+  <p>Inside the window, your nervous system has enough capacity to do its job. Outside of it, in either direction, capacity collapses. The mind narrows, the body takes over, and the choices that felt obvious five minutes ago are suddenly nowhere to be found.</p>
+
+  <p>Most of us were never taught that this zone exists. We were taught to push through, to manage, to perform calm even when the body was nowhere near it. But healing asks something different. It asks us to learn the shape of our own window — and to widen it, slowly, over time.</p>
+
+  <h2>What it <em>feels</em> like inside the window.</h2>
+
+  <p>Inside your Window of Tolerance, you are not necessarily happy. You are something more useful than happy. You are <strong>resourced</strong>.</p>
+
+  <p>You can notice what is happening in your body. You can name what you are feeling, even if it is hard. You can hold someone else's experience without losing your own. You can wait. You can sit with discomfort for a few minutes without needing to fix or flee it. You can be honest. You can listen. You can think about the future without panicking. You can make a small decision and trust yourself to carry it out.</p>
+
+  <p>This is the zone where healing actually happens. Not because everything is comfortable inside it — it often is not — but because there is enough room for the body and the mind to be in the same room together.</p>
+
+  <h2>What it looks like to <em>leave</em> the window.</h2>
+
+  <p>Most people leave their window every day. The question is not whether you ever leave it. The question is whether you can notice when you have, and whether you have the tools to return.</p>
+
+  <p>There are two directions out, and they feel very different from each other.</p>
+
+  <div class="diagram">
+    <div class="diagram-label">A map of nervous system states</div>
+    <div class="zone">
+      <div class="zone-bar up"></div>
+      <div class="zone-name">Hyperarousal <em>(above)</em></div>
+      <div class="zone-desc">Anxiety, panic, irritability, racing thoughts, urgency, tight chest, fight or flight.</div>
+    </div>
+    <div class="zone">
+      <div class="zone-bar mid"></div>
+      <div class="zone-name">Window <em>of Tolerance</em></div>
+      <div class="zone-desc">Grounded, present, connected, able to feel and think at the same time.</div>
+    </div>
+    <div class="zone">
+      <div class="zone-bar down"></div>
+      <div class="zone-name">Hypoarousal <em>(below)</em></div>
+      <div class="zone-desc">Numbness, shutdown, collapse, foggy thinking, exhaustion, freeze or fawn.</div>
+    </div>
+  </div>
+
+  <h3>Above the window: hyperarousal.</h3>
+  <p>This is the territory of <strong>too much</strong>. Energy is mobilized. The heart speeds up. The mind races. Thoughts spiral. The jaw clenches. The world feels urgent and possibly dangerous. You might feel like you need to act, fix, escape, or argue — right now. This is the nervous system's fight-or-flight response, doing what it was built to do. It is not weakness. It is biology.</p>
+
+  <h3>Below the window: hypoarousal.</h3>
+  <p>This is the territory of <strong>too little</strong>. The system has decided that mobilizing is not safe, so it does the opposite. The body becomes heavy. Thoughts get foggy. Emotions become hard to access. You may feel numb, disconnected, exhausted, or strangely far away from yourself. This is freeze, collapse, or shutdown. It is also not weakness. It is also biology.</p>
+
+  <div class="pull">
+    <p class="pull-text">A small window is not a personal flaw. <em>It is a body that has been working very hard, for a very long time, to keep you safe.</em></p>
+    <div class="pull-attr">Dr. Fab</div>
+  </div>
+
+  <h2>Why <em>your</em> window is the size it is.</h2>
+
+  <p>The width of your Window of Tolerance is shaped by many things: early experience, chronic stress, trauma history, sleep, nutrition, current safety, community, culture, and the daily nervous system load of the life you are living right now.</p>
+
+  <p>People who have lived through significant adversity often have narrower windows. This is not a deficit. It is an adaptation. A body that has had to stay alert for a long time learns to leave the window quickly. It learned that as a way of surviving.</p>
+
+  <p>And here is the most important part: <strong>windows can widen</strong>. Slowly. With practice, support, and time, the body can learn that more states are survivable. The window grows. The leaving happens less often, and the returning happens faster.</p>
+
+  <h2>How to <em>notice</em> when you have left it.</h2>
+
+  <p>Most of us are trained to ignore the body's early signals. We get the alarm bells but keep working through them. By the time we notice we are out of our window, we are already deep in it.</p>
+
+  <p>Learning the early signs is one of the most useful pieces of nervous system work you can do.</p>
+
+  <p>For <strong>hyperarousal</strong>, the early signs often include: a slightly faster heart rate, a tightening in the chest or jaw, a quickening of thoughts, irritability with things that usually do not bother you, a sense of urgency about something that is not actually urgent, sharp impatience, or feeling suddenly hot.</p>
+
+  <p>For <strong>hypoarousal</strong>, the early signs are quieter and easier to miss: a slow heaviness in the body, foggy or slowed thinking, a quiet sense of not really being here, difficulty making small decisions, a hollow flatness, or a strange tiredness that is not about sleep.</p>
+
+  <p>If you can catch the early signs, you have many more options than if you wait until you are deep in either zone.</p>
+
+  <div class="try-this">
+    <div class="try-this-label">A practice</div>
+    <h3>The <em>window check-in</em>.</h3>
+    <p>Try this once or twice a day, especially when transitioning between activities. It takes thirty seconds.</p>
+    <ol>
+      <li><strong>Pause</strong>. Both feet on the floor.</li>
+      <li><strong>Scan</strong>. What is happening in your chest, belly, jaw, and shoulders?</li>
+      <li><strong>Locate</strong>. Are you above your window (revved, urgent, tight), inside it (steady, here), or below it (heavy, foggy, far)?</li>
+      <li><strong>Choose</strong>. If you are out, choose one small practice to begin returning. If you are in, simply notice that you are. Both are useful.</li>
+    </ol>
+  </div>
+
+  <h2>How to <em>widen</em> the window, over time.</h2>
+
+  <p>Widening the window is not the work of a weekend. It is the work of a thousand small returns. Every time you notice you have left, and gently come back, the body learns. The pathway becomes more familiar. The window grows.</p>
+
+  <p>Some of the work is daily and self-led: <strong>regulation practices</strong>, sleep, movement, time outside, slowing down, the small grounding habits that keep the nervous system tended. <a href="#lexicon-grounding">Grounding</a>, <a href="#lexicon-regulation">regulation</a>, and <a href="#lexicon-co-regulation">co-regulation</a> are all part of this work.</p>
+
+  <p>Some of the work is relational: being with people whose nervous systems are steady, who can co-regulate with yours without rushing you. Safe relationships are nervous system medicine.</p>
+
+  <p>And some of the work is deeper. If your window has been narrowed by trauma, working with a trauma-informed clinician can help you process what is underneath, in a way that does not require you to white-knuckle your way through it. Trauma work is, in many ways, window-widening work done with skilled company.</p>
+
+  <h2>What this means in <em>practice</em>.</h2>
+
+  <p>You are not broken because your window is the size it is. You are not failing because you keep leaving it. You are a human nervous system doing what nervous systems do, in a body that has its own particular history.</p>
+
+  <p>The work is not to live inside the window all the time. That is not possible, and it is not the goal. The work is to know the shape of your own window, to recognize when you have left it, to have tools that help you return, and — over time — to give the window the chance to widen.</p>
+
+  <p>This is the slow, ordinary, life-changing work of nervous system care. It is the foundation under everything else.</p>
+
+  <div class="disclaimer">
+    <strong>A note.</strong> This article is for education, not diagnosis or treatment. If you are working with persistent dysregulation, trauma symptoms, or are in crisis, please reach out for support. In the United States, you can call or text <strong>988</strong> for the Suicide and Crisis Lifeline.
+  </div>
+
+  <section class="related">
+    <div class="related-label">Related terms in the Lexicon</div>
+    <h3>Better words for hard things.</h3>
+    <div class="related-grid">
+      <a class="related-item" href="#lexicon-regulation">
+        <span class="term">Regulation</span>
+        <span class="gloss">Helping the body return toward steadiness after stress.</span>
+      </a>
+      <a class="related-item" href="#lexicon-grounding">
+        <span class="term">Grounding</span>
+        <span class="gloss">Practices that return attention to the present and the body.</span>
+      </a>
+      <a class="related-item" href="#lexicon-co-regulation">
+        <span class="term">Co-Regulation</span>
+        <span class="gloss">Using a steady presence to help another nervous system settle.</span>
+      </a>
+      <a class="related-item" href="#lexicon-activation">
+        <span class="term">Activation</span>
+        <span class="gloss">A body state of mobilized energy and urgency.</span>
+      </a>
+    </div>
+  </section>
+
+  <div class="cta-block">
+    <h3>Want steady company<br>for this <em>work</em>?</h3>
+    <p>Dr. Fab offers trauma-informed support for people learning to live more often inside their window — and to return to it more easily when they leave.</p>
+    <div class="cta-buttons">
+      <a href="/#pathway" class="btn btn-primary">Request a Consultation</a>
+      <a href="/#sanctuary" class="btn btn-ghost">Explore the Sanctuary</a>
+    </div>
+  </div>
+
+</article>
+
+<footer class="site-footer">
+  <div class="tag">Clinical care with a softer landing.</div>
+  <div>Doctor Fab · doctorfab.org · © 2026</div>
+</footer>
+
+</body>
+</html>
