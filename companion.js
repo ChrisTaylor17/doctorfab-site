@@ -372,11 +372,14 @@ You do not need perfect words to ask for more support. ${supportLine}`;
   }
 
   function mailtoHref(details) {
-    const params = new URLSearchParams({
-      subject: details.subject || "Doctor Fab inquiry",
-      body: details.body || "",
-    });
-    return `mailto:${details.email || CONTACT_EMAIL}?${params.toString()}`;
+    const params = [
+      ["subject", details.subject || "Doctor Fab inquiry"],
+      ["body", details.body || ""],
+    ]
+      .map(([key, value]) => `${key}=${encodeURIComponent(value)}`)
+      .join("&");
+
+    return `mailto:${details.email || CONTACT_EMAIL}?${params}`;
   }
 
   function buildContactModal() {
