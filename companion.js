@@ -1,13 +1,11 @@
 (function () {
   const form = document.querySelector("[data-companion-form]");
-  if (!form) return;
-
-  const input = form.querySelector("[data-companion-input]");
+  const input = form?.querySelector("[data-companion-input]");
   const messagesEl = document.querySelector("[data-companion-messages]");
   const statusEl = document.querySelector("[data-companion-status]");
   const counterEl = document.querySelector("[data-companion-counter]");
   const promptButtons = document.querySelectorAll("[data-companion-prompt]");
-  const submitButton = form.querySelector("button[type='submit']");
+  const submitButton = form?.querySelector("button[type='submit']");
   const companionLinks = document.querySelectorAll("[data-focus-companion]");
   const contactLinks = document.querySelectorAll("a[href^='mailto:']");
   const careButtons = document.querySelectorAll("[data-care-path]");
@@ -31,6 +29,7 @@
   const pathwayNoteLabel = document.querySelector("[data-pathway-note-label]");
   const pathwayStatus = document.querySelector("[data-pathway-status]");
   const pathwayReset = document.querySelector("[data-pathway-reset]");
+  const hasCompanion = Boolean(form && input && messagesEl && counterEl && submitButton);
 
   const CONTACT_EMAIL = "doctorfabj@gmail.com";
   const MAX_MESSAGE_CHARS = 900;
@@ -157,6 +156,8 @@
   }
 
   function renderMessage(role, content, options = {}) {
+    if (!messagesEl) return;
+
     const item = document.createElement("div");
     item.className = `companion-message ${role === "user" ? "is-user" : "is-guide"}`;
     if (options.crisis) item.classList.add("is-crisis");
@@ -174,11 +175,15 @@
   }
 
   function renderInitialMessages() {
+    if (!messagesEl) return;
+
     messagesEl.innerHTML = "";
     renderMessage("assistant", conversation[0].content);
   }
 
   function updateCounter() {
+    if (!input || !counterEl) return;
+
     const count = input.value.length;
     counterEl.textContent = `${count}/${MAX_MESSAGE_CHARS}`;
     counterEl.classList.toggle("is-near-limit", count > MAX_MESSAGE_CHARS * 0.85);
@@ -255,6 +260,8 @@ You do not need perfect words to ask for more support. ${supportLine}`;
   }
 
   function setLoading(isLoading) {
+    if (!input || !submitButton) return;
+
     submitButton.disabled = isLoading;
     input.disabled = isLoading;
     promptButtons.forEach((button) => {
@@ -264,6 +271,8 @@ You do not need perfect words to ask for more support. ${supportLine}`;
   }
 
   function focusInput() {
+    if (!input) return;
+
     try {
       input.focus({ preventScroll: true });
     } catch (error) {
@@ -520,7 +529,10 @@ You do not need perfect words to ask for more support. ${supportLine}`;
 
   function startPathway(type, interest = "") {
     selectPathway(type, interest);
-    if (!pathwaySection) return;
+    if (!pathwaySection) {
+      window.location.href = "index.html#pathway";
+      return;
+    }
 
     if (window.location.hash !== "#pathway") {
       window.location.hash = "pathway";
@@ -616,7 +628,7 @@ Thank you.`,
   promptButtons.forEach((button) => {
     button.addEventListener("click", () => {
       const message = (button.dataset.companionPrompt || "").trim();
-      if (!message || submitButton.disabled) return;
+      if (!hasCompanion || !message || submitButton.disabled) return;
       setStatus("");
       sendMessage(message);
     });
@@ -738,9 +750,11 @@ ${contactMessageEl.value}`;
     }
   });
 
-  input.addEventListener("input", updateCounter);
-  form.addEventListener("submit", (event) => {
+  input?.addEventListener("input", updateCounter);
+  form?.addEventListener("submit", (event) => {
     event.preventDefault();
+    if (!input) return;
+
     const message = input.value.trim();
     if (!message) return;
     if (message.length > MAX_MESSAGE_CHARS) {
@@ -760,6 +774,8 @@ ${contactMessageEl.value}`;
     filterLexicon();
   }
 
-  renderInitialMessages();
-  updateCounter();
+  if (hasCompanion) {
+    renderInitialMessages();
+    updateCounter();
+  }
 })();
