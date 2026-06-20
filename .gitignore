@@ -7,3 +7,5 @@ doctorfab-companion-config.php
 storage/*.json
 storage/*.log
 !storage/.htaccess
+local_*_server.log
+local_*_server.pid

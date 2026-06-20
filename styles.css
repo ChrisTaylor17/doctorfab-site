@@ -16,6 +16,221 @@
   --sans: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
+/* Sanctuary of Plenty private audio page */
+.sop-page {
+  background:
+    linear-gradient(180deg, rgba(251, 247, 241, 0.74), var(--shell) 46%),
+    url("assets/sanctuary-of-plenty/cover-base-web.jpg") center top / min(1400px, 120vw) auto no-repeat;
+}
+
+.sop-hero {
+  align-items: end;
+  display: grid;
+  gap: clamp(28px, 5vw, 72px);
+  grid-template-columns: minmax(0, 1.05fr) minmax(280px, 0.78fr);
+  margin: 0 auto;
+  min-height: calc(100svh - 76px);
+  padding: clamp(64px, 8vw, 108px) clamp(20px, 5vw, 72px) clamp(42px, 6vw, 76px);
+  position: relative;
+  width: min(1280px, 100%);
+}
+
+.sop-hero::before {
+  background: rgba(251, 247, 241, 0.82);
+  border: 1px solid rgba(21, 57, 71, 0.08);
+  border-radius: 50%;
+  content: "";
+  height: clamp(320px, 45vw, 560px);
+  left: clamp(-140px, -8vw, -40px);
+  position: absolute;
+  top: clamp(80px, 12vw, 160px);
+  width: clamp(320px, 45vw, 560px);
+  z-index: 0;
+}
+
+.sop-hero-copy,
+.sop-cover {
+  position: relative;
+  z-index: 1;
+}
+
+.sop-hero-copy {
+  max-width: 760px;
+}
+
+.sop-hero h1 {
+  color: var(--navy);
+  font-family: var(--serif);
+  font-size: clamp(68px, 11vw, 148px);
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  line-height: 0.87;
+  margin: 0;
+}
+
+.sop-lede {
+  color: var(--ink);
+  font-size: clamp(21px, 2.4vw, 32px);
+  line-height: 1.38;
+  margin: 28px 0 0;
+  max-width: 700px;
+}
+
+.sop-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 32px;
+}
+
+.sop-cover {
+  margin: 0;
+}
+
+.sop-cover img {
+  aspect-ratio: 1;
+  border: 10px solid rgba(255, 253, 249, 0.82);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  height: auto;
+  object-fit: cover;
+  width: 100%;
+}
+
+.sop-letter {
+  align-items: start;
+  display: grid;
+  gap: clamp(28px, 5vw, 70px);
+  grid-template-columns: minmax(260px, 0.8fr) minmax(0, 1.2fr);
+}
+
+.sop-letter-copy {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  padding: clamp(28px, 4vw, 48px);
+}
+
+.sop-letter-copy p {
+  color: var(--ink);
+  font-size: 18px;
+  line-height: 1.78;
+  margin: 0 0 18px;
+}
+
+.sop-letter-copy .sop-signature {
+  color: var(--rose);
+  font-weight: 850;
+  margin-bottom: 0;
+}
+
+.sop-track-list {
+  display: grid;
+  gap: 18px;
+}
+
+.sop-track {
+  align-items: center;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: 0 18px 48px rgba(21, 57, 71, 0.08);
+  display: grid;
+  gap: 20px;
+  grid-template-columns: minmax(260px, 0.85fr) minmax(280px, 1fr);
+  padding: clamp(20px, 3vw, 30px);
+}
+
+.sop-track span {
+  color: var(--rose);
+  display: block;
+  font-size: 13px;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.sop-track h3 {
+  color: var(--navy);
+  font-family: var(--serif);
+  font-size: clamp(26px, 3vw, 40px);
+  font-weight: 500;
+  line-height: 1;
+  margin: 0 0 10px;
+}
+
+.sop-track p {
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.55;
+  margin: 0;
+}
+
+.sop-track audio {
+  min-height: 42px;
+  width: 100%;
+}
+
+.sop-closing {
+  align-items: start;
+  background: var(--navy);
+  border-radius: 8px;
+  color: #fff;
+  display: grid;
+  gap: clamp(22px, 4vw, 60px);
+  grid-template-columns: minmax(260px, 0.82fr) minmax(0, 1.18fr);
+  margin-bottom: clamp(40px, 7vw, 90px);
+  padding-bottom: clamp(32px, 5vw, 58px);
+  padding-top: clamp(32px, 5vw, 58px);
+}
+
+.sop-closing h2,
+.sop-closing .eyebrow,
+.sop-closing p {
+  color: #fff;
+}
+
+.sop-closing p {
+  font-size: 18px;
+  line-height: 1.72;
+  margin: 0;
+}
+
+@media (max-width: 860px) {
+  .sop-hero,
+  .sop-letter,
+  .sop-track,
+  .sop-closing {
+    grid-template-columns: 1fr;
+  }
+
+  .sop-hero {
+    align-items: start;
+    min-height: auto;
+    padding-top: 48px;
+  }
+
+  .sop-cover {
+    max-width: 560px;
+  }
+}
+
+@media (max-width: 620px) {
+  .sop-hero h1 {
+    font-size: clamp(52px, 18vw, 76px);
+  }
+
+  .sop-lede {
+    font-size: 19px;
+  }
+
+  .sop-track {
+    padding: 20px;
+  }
+}
+
 * {
   box-sizing: border-box;
 }
